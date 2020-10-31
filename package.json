@@ -3,13 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "npm run compile:css && next dev",
+    "build": "npm run compile:css && next build",
+    "start": "next start",
+    "compile:css": "postcss styles/tailwind.css -o styles/compiledTailwind.css"
   },
   "dependencies": {
     "next": "10.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "postcss-cli": "^8.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^1.9.6"
   }
 }
