@@ -2,7 +2,7 @@
 
 This is an example of using [Tailwind CSS](https://tailwindcss.com/) in a Next.js project.
 
-for more details read [this post](http://ehsanabtahi.com/).
+For more details, read [this post](http://ehsanabtahi.com/).
 
 
 ## How to use
